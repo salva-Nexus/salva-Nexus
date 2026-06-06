@@ -27,7 +27,7 @@ The settlement layer for Nigerians in the Salva ecosystem — live on **Ethereum
 A peer-to-peer exchange protocol enabling trustless NGN ↔ USD stablecoin swaps on both chains.
 
 * **LP-Driven:** Anyone can deploy a liquidity pool, set rates, and earn as a market maker.
-* **Dual-Chain:** Operates natively on Ethereum Mainnet and Base L2.
+* **Dual-Chain:** Operates natively on BNB Chain and Base L2.
 * **Transparent Pricing:** On-chain buy/sell rates set directly by liquidity providers — no hidden spreads.
 
 ---
