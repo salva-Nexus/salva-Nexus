@@ -1,11 +1,10 @@
 # 🛡️ SALVA Ecosystem
-> **Sovereign. Multichain. Vertically Integrated.**
 
 Salva is a unified payments and identity infrastructure designed to bridge the gap between fragmented EVM networks. By vertically integrating Naming, Stablecoins, and Decentralized Exchange, we provide a "Closed-Loop" financial experience that abstracts the underlying chain complexity.
 
 ---
 
-## 💎 The Trinity
+## 💎 The Trilogy
 
 Salva is built on three core pillars that operate as a single, cohesive unit:
 
