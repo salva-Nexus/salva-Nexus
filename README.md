@@ -16,10 +16,10 @@ A high-efficiency registry using a **Factory-Clone (EIP-1167)** architecture.
 * **Human-Readable:** Send and receive funds using names like `charles@salva` instead of wallet addresses.
 
 ### 2. 🪙 NGNs (Nigerian Naira Stablecoin)
-The settlement layer for Nigerians in the Salva ecosystem — live on **Ethereum Mainnet** and **Base**.
+The settlement layer for Nigerians in the Salva ecosystem — live on **BNB Chain** and **Base**.
 
 * **Native Utility:** Designed for direct integration with SNS handles.
-* **Dual-Chain:** Deployed on Ethereum L1 and Base L2.
+* **Dual-Chain:** Deployed on BNB Chain and Base L2.
 * **Gas-Free UX:** Built-in paymasters for seamless NGNs transactions via Salva Smart Wallets.
 
 ### 3. ⇄ Naira DEX (V3 Liquidity Protocol)
