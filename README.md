@@ -9,7 +9,7 @@ Salva is a unified payments and identity infrastructure designed to bridge the g
 Salva is built on three core pillars that operate as a single, cohesive unit:
 
 ### 1. 🏷️ SNS (Salva Naming Service)
-A high-efficiency, multichain registry using a **Factory-Clone (EIP-1167)** architecture.
+A high-efficiency registry using a **Factory-Clone (EIP-1167)** architecture.
 
 * **Low Cost:** Deploy sub-registries cheaply on L2.
 * **Optimized:** Custom `NameLib` with bit-packed storage and gas-efficient resolution.
