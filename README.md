@@ -1,6 +1,6 @@
 # 🛡️ SALVA Nexus
 
-### Permissionless Payments & Identity Infrastructure for the EVM
+### Permissionless Payments & Identity Infrastructure
 
 Salva is a decentralized payments and identity infrastructure designed to make blockchain applications easier to use while remaining open for anyone to build on.
 
