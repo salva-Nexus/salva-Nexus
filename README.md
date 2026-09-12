@@ -1,32 +1,72 @@
-# 🛡️ SALVA Ecosystem
+# 🛡️ SALVA Nexus
 
-Salva is a unified payments and identity infrastructure designed to bridge the gap between fragmented EVM networks. By vertically integrating Naming, Stablecoins, and Decentralized Exchange, we provide a "Closed-Loop" financial experience that abstracts the underlying chain complexity.
+### Permissionless Payments & Identity Infrastructure for the EVM
+
+Salva is a decentralized payments and identity infrastructure designed to make blockchain applications easier to use while remaining open for anyone to build on.
+
+The ecosystem combines **Naming, on-chain Naira, and decentralized p2p** into interoperable protocol layers — abstracting much of the underlying blockchain complexity from users and applications.
+
+---
+
+## 💎 The Salva Ecosystem
+
+Salva is built around three core protocol layers:
+
+### 1. 🏷️ SNS — Salva Naming Service
+
+A decentralized identity and naming layer for human-readable on-chain identities.
+
+SNS uses a **Factory + EIP-1167 registry architecture**, allowing namespaces to maintain independent ownership, permissions, and records while remaining interoperable through a shared routing layer.
+
+- **Human-readable:** `charles@salva`
+- **Independent namespaces:** Each namespace has its own registry and state.
+- **Permissionless:** Namespaces can be configured for open or owner-controlled participation.
+- **Extensible:** Records can resolve to wallet addresses or other application-specific data.
 
 ---
 
-## 💎 The Trilogy
+### 2. 🪙 NGNs — Nigerian Naira Settlement Layer
 
-Salva is built on three core pillars that operate as a single, cohesive unit:
+NGNs is Salva's Naira-denominated settlement infrastructure for on-chain applications.
 
-### 1. 🏷️ SNS (Salva Naming Service)
-A high-efficiency registry using a **Factory-Clone (EIP-1167)** architecture.
+It provides a native unit of account for Naira-based payments and financial applications across supported EVM networks.
 
-* **Low Cost:** Deploy sub-registries cheaply on L2.
-* **Optimized:** Custom `NameLib` with bit-packed storage and gas-efficient resolution.
-* **Human-Readable:** Send and receive funds using names like `charles@salva` instead of wallet addresses.
-
-### 2. 🪙 NGNs (Nigerian Naira Stablecoin)
-The settlement layer for Nigerians in the Salva ecosystem — live on **BNB Chain** and **Base**.
-
-* **Native Utility:** Designed for direct integration with SNS handles.
-* **Dual-Chain:** Deployed on BNB Chain and Base L2.
-* **Gas-Free UX:** Built-in paymasters for seamless NGNs transactions via Salva Smart Wallets.
-
-### 3. ⇄ Naira DEX (V3 Liquidity Protocol)
-A peer-to-peer exchange protocol enabling trustless NGN ↔ USD stablecoin swaps on both chains.
-
-* **LP-Driven:** Anyone can deploy a liquidity pool, set rates, and earn as a market maker.
-* **Dual-Chain:** Operates natively on BNB Chain and Base L2.
-* **Transparent Pricing:** On-chain buy/sell rates set directly by liquidity providers — no hidden spreads.
+- **Naira-native:** Designed around the Nigerian Naira.
+- **Payment-focused:** Designed to work naturally with SNS identities and Salva wallets.
+- **EVM-native:** Integrates directly with decentralized applications and smart contracts.
 
 ---
+
+### 3. ⇄ Naira DEX — Decentralized Naira p2p Exchange
+
+A peer-to-peer liquidity protocol for exchanging NGNs against USD-denominated stablecoins.
+
+Liquidity providers can deploy their own pools, define their rates and parameters, and provide liquidity without relying on a centralized exchange operator.
+
+- **Permissionless liquidity:** Anyone can deploy a pool.
+- **Provider-defined pricing:** Liquidity providers determine their own exchange rates.
+- **Peer-to-peer:** No centralized order book or OTC desk.
+- **Transparent:** Pool parameters and transactions are enforced on-chain.
+
+---
+
+## 🏗️ Architecture
+
+```text
+                         SALVA NEXUS
+                              │
+             ┌────────────────┼────────────────┐
+             │                │                │
+             ▼                ▼                ▼
+           SNS              NGNs           Naira DEX
+        Identity          Settlement        Liquidity
+             │                │                │
+             └────────────────┼────────────────┘
+                              │
+                              ▼
+                    Salva Applications
+                              │
+             ┌────────────────┼────────────────┐
+             ▼                ▼                ▼
+          Wallets          Payments        Financial
+                                           Applications
