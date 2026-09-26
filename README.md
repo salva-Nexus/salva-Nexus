@@ -32,16 +32,15 @@ NGNs is Salva's Naira-denominated settlement infrastructure for on-chain applica
 It provides a native unit of account for Naira-based payments and financial applications across supported EVM networks.
 
 - **Naira-native:** Designed around the Nigerian Naira.
-- **Payment-focused:** Designed to work naturally with SNS identities and Salva wallets.
 - **EVM-native:** Integrates directly with decentralized applications and smart contracts.
 
 ---
 
-### 3. ⇄ Naira DEX — Decentralized Naira p2p Exchange
+### 3. ⇄ Salva PEX — Salva’s Permissionless p2p Exchange
 
-A peer-to-peer liquidity protocol for exchanging NGNs against USD-denominated stablecoins.
+A peer-to-peer liquidity protocol for exchanging Crypto Assets.
 
-Liquidity providers can deploy their own pools, define their rates and parameters, and provide liquidity without relying on a centralized exchange operator.
+Liquidity providers can deploy their own pools, define their parameters, and provide liquidity without relying on a centralized exchange operator.
 
 - **Permissionless liquidity:** Anyone can deploy a pool.
 - **Provider-defined pricing:** Liquidity providers determine their own exchange rates.
