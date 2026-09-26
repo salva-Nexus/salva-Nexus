@@ -4,7 +4,7 @@
 
 Salva is a decentralized payments and identity infrastructure designed to make blockchain applications easier to use while remaining open for anyone to build on.
 
-The ecosystem combines **Naming, on-chain Naira, and decentralized p2p** into interoperable protocol layers — abstracting much of the underlying blockchain complexity from users and applications.
+The ecosystem combines **Naming, a collateral-backed on-chain Naira, and permissionless p2p liquidity** into interoperable protocol layers — abstracting much of the underlying blockchain complexity from users and applications.
 
 ---
 
@@ -16,34 +16,32 @@ Salva is built around three core protocol layers:
 
 A decentralized identity and naming layer for human-readable on-chain identities.
 
-SNS uses a **Factory + EIP-1167 registry architecture**, allowing namespaces to maintain independent ownership, permissions, and records while remaining interoperable through a shared routing layer.
-
-- **Human-readable:** `charles@salva`
-- **Independent namespaces:** Each namespace has its own registry and state.
+- **Human-readable:** `pay.ngns.base@cbechange`
+- **Independent namespaces:** Each namespace has its own registry, owners, and records.
 - **Permissionless:** Namespaces can be configured for open or owner-controlled participation.
 - **Extensible:** Records can resolve to wallet addresses or other application-specific data.
 
 ---
 
-### 2. 🪙 NGNs — Nigerian Naira Settlement Layer
+### 2. 🪙 NGNs — Nigerian Naira Protocol
 
-NGNs is Salva's Naira-denominated settlement infrastructure for on-chain applications.
+NGNs is Salva's Naira-denominated stablecoin protocol. Minted as collateralized debt — users lock up crypto assets as collateral and mint NGNS against them.
 
-It provides a native unit of account for Naira-based payments and financial applications across supported EVM networks.
-
-- **Naira-native:** Designed around the Nigerian Naira.
-- **EVM-native:** Integrates directly with decentralized applications and smart contracts.
+- **Collateral-backed:** Every NGNS in circulation is backed by crypto collateral locked in the protocol.
+- **User-owned positions:** Anyone can deposit approved collateral and mint NGNS against it, and repay/withdraw on their own terms.
+- **Price-aware:** Collateral and debt values are continuously checked against live market prices to keep the system solvent.
+- **Self-correcting:** Positions that fall below a safe collateralization level can be liquidated by anyone, keeping the system fully backed.
+- **Naira-native, EVM-native:** Designed around the Nigerian Naira, and usable directly by any EVM smart contract or application.
 
 ---
 
-### 3. ⇄ Salva PEX — Salva’s Permissionless p2p Exchange
+### 3. ⇄ Salva PEX — Salva's Permissionless P2P Exchange
 
-A peer-to-peer liquidity protocol for exchanging Crypto Assets.
+A peer-to-peer liquidity protocol for exchanging crypto assets.
 
-Liquidity providers can deploy their own pools, define their parameters, and provide liquidity without relying on a centralized exchange operator.
-
-- **Permissionless liquidity:** Anyone can deploy a pool.
-- **Provider-defined pricing:** Liquidity providers determine their own exchange rates.
+- **Permissionless liquidity:** Anyone can deploy their own pool.
+- **Provider-defined pricing:** Liquidity providers set their own price floor and spread.
+- **Floor-protected:** Pools follow live market prices but won't sell below a provider's chosen floor unless the provider explicitly allows it — protecting liquidity from bad or stale price data.
 - **Peer-to-peer:** No centralized order book or OTC desk.
 - **Transparent:** Pool parameters and transactions are enforced on-chain.
 
@@ -57,8 +55,8 @@ Liquidity providers can deploy their own pools, define their parameters, and pro
              ┌────────────────┼────────────────┐
              │                │                │
              ▼                ▼                ▼
-           SNS              NGNs           Naira DEX
-        Identity          Settlement        Liquidity
+           SNS              NGNs           Salva PEX
+        Identity        Naira Protocol      Liquidity
              │                │                │
              └────────────────┼────────────────┘
                               │
@@ -69,3 +67,4 @@ Liquidity providers can deploy their own pools, define their parameters, and pro
              ▼                ▼                ▼
           Wallets          Payments        Financial
                                            Applications
+```
