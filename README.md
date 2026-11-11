@@ -68,3 +68,5 @@ A peer-to-peer liquidity protocol for exchanging crypto assets.
           Wallets          Payments        Financial
                                            Applications
 ```
+
+WHITE PAPER: https://drive.google.com/file/d/1LRdw4C4FPjB5GJ_oN5UM7ooXgljxwAwh/view?usp=drivesdk
